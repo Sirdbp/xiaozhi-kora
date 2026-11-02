@@ -1,0 +1,10 @@
+# Kora defaults (Waveshare ESP32-P4-NANO-WIFI6-DB: ESP32-P4 v3 + ESP32-C5), for plain `idf.py`
+# builds into a separate directory (see README.md). scripts/build.py uses config.json instead.
+CONFIG_IDF_TARGET="esp32p4"
+CONFIG_BOARD_TYPE_KORA=y
+CONFIG_SLAVE_IDF_TARGET_ESP32C5=y
+CONFIG_ESP_HOSTED_CP_TARGET_ESP32C5=y
+CONFIG_ESP_HOSTED_MEMPOOL_PREFER_SPIRAM=y
+CONFIG_LANGUAGE_ES_ES=y
+CONFIG_USE_AFE_WAKE_WORD=y
+CONFIG_SR_WN_WN9_HIESP=y

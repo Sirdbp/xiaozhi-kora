@@ -1,0 +1,15 @@
+{
+    "manufacturer": "aura",
+    "type": "kora",
+    "target": "esp32p4",
+    "builds": [
+        {
+            "name": "kora",
+            "sdkconfig_append": [
+                "CONFIG_SLAVE_IDF_TARGET_ESP32C5=y",
+                "CONFIG_ESP_HOSTED_CP_TARGET_ESP32C5=y",
+                "CONFIG_ESP_HOSTED_MEMPOOL_PREFER_SPIRAM=y"
+            ]
+        }
+    ]
+}
