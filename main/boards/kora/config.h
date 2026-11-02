@@ -4,8 +4,8 @@
 #include <driver/gpio.h>
 #include <driver/spi_master.h>
 
-// Kora: Waveshare ESP32-P4-NANO-WIFI6-DB (ESP32-P4 v3 + ESP32-C5 Wi-Fi 6 co-processor)
-// Audio ES8311: on-board, same pins as the ESP32-P4-NANO
+// Kora: Waveshare ESP32-P4-NANO (ESP32-P4 v1.x + ESP32-C6 co-processor), same wiring as AURA-902
+// Audio ES8311: original Waveshare ESP32-P4-NANO pin assignment
 #define AUDIO_INPUT_SAMPLE_RATE  24000
 #define AUDIO_OUTPUT_SAMPLE_RATE 24000
 #define AUDIO_I2S_GPIO_MCLK GPIO_NUM_13
@@ -40,7 +40,7 @@
 
 // AURA sensors: DHT11 (MCP tool) and TTP223 touch module (active high, acts like BOOT click)
 #define AURA_DHT_GPIO GPIO_NUM_4
-#define AURA_TOUCH_GPIO GPIO_NUM_20  // GPIO6 is wired to the ESP32-C5 (IO2) on this board
+#define AURA_TOUCH_GPIO GPIO_NUM_6
 
 // Temperature alerts (DHT11): the robot reacts when crossing these limits
 #define AURA_TEMP_HOT_C  30

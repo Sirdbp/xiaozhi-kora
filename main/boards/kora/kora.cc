@@ -26,7 +26,7 @@
 
 #define TAG "Kora"
 
-// Kora: AURA robot (GC9A01 face, DHT11, TTP223, PCA9685 body) on the Waveshare ESP32-P4-NANO-WIFI6-DB.
+// Kora: AURA robot (GC9A01 face, DHT11, TTP223, PCA9685 body) on the Waveshare ESP32-P4-NANO (ESP32-C6).
 class KoraBoard : public WifiBoard {
 private:
     i2c_master_bus_handle_t codec_i2c_bus_ = nullptr;
