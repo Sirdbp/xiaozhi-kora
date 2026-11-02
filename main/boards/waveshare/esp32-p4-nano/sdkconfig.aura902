@@ -1,0 +1,8 @@
+# AURA-902 defaults (Waveshare ESP32-P4-NANO + GC9A01), used by plain `idf.py` builds when
+# `sdkconfig` is created from scratch. scripts/build.py passes its own SDKCONFIG_DEFAULTS instead.
+CONFIG_BOARD_TYPE_WAVESHARE_ESP32_P4_NANO=y
+CONFIG_ESP32P4_SELECTS_REV_LESS_V3=y
+CONFIG_LANGUAGE_ES_ES=y
+CONFIG_USE_AFE_WAKE_WORD=y
+CONFIG_SR_WN_WN9_HIESP=y
+CONFIG_ESP_HOSTED_MEMPOOL_PREFER_SPIRAM=y
